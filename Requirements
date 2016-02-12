@@ -1,269 +1,204 @@
-Requirements Document 
 
-Table of Contents
 
-Modification History 3
 
-Domain Knowledge 4
 
-Glossary 4 
 
-Interview with Client 6
 
-Functional Requirements 7
 
-Use Cases 7
 
-Use Case 1 7
 
-Use Case 2 7
 
-Use Case 3 8
 
-Use Case 4 8
+	Requirements Document	
 
-Use Case 5 8
 
-Use Case 6 9
 
-Non-Functional Requirements 10
 
-Cost Constraints: 10
 
-Reliability: 10
 
-Time Constraints: 10
 
-MODIFICATION HISTORY
 
-DOMAIN KNOWLEDGE
 
+
+Table of Contents
+Modification History	
+Domain Knowledge	
+Glossary	
+Interview with Client	
+Functional Requirements	
+Use Cases	
+Use Case 1	
+Use Case 2	
+Use Case 3	
+Use Case 4	
+Use Case 5	
+Use Case 6	
+Non-Functional Requirements	
+Cost Constraints:	
+Reliability:	
+Time Constraints:	
+
+MODIFICATION HISTORY
+
+DOMAIN KNOWLEDGE
 GLOSSARY
 
-Term Definition 
+Term
+Definition
+6X6X4
+A game is played between two players using stones of their choice of color. The player takes turns marking spaces on the 6x6 grid. Identification of the winner is based on the highest number of 4-stone in a row(either horizontally, or vertically, or diagonally) when the entire grid is occupied.
+Platform
+Software on which the Tic Tac Toe is expected to be designed.
+Single player 
+Player plays against AI
+Multi Player
+Player plays against another player
+Graphical User Interface
+It is a type of interface that allows users to interact with electronic devices by the use of windows icons and menus that can be implemented at the user’s command.
+Skill Level
+Easy, Intermediate, Hard. They are the difficulty levels in single player  game.
+C++
+C++ is an object oriented programming (OOP) language and is an extension of C language. It is one of the most popular programming language for graphical applications.
 
-6X6X4 A game is played between two players using stones of their choice of color. The 
+Acronym 
+Meaning
+GUI
+Graphical User Interface
+AI
+Artificial Intelligence
+TTT
+Tic Tac Toe
+SQA
+Software Quality Assurance
+UML
+Unified Modeling Language
+SPMP
+Software Project management Plan
+UC
+Use Cases
+SD
+Sequence Diagram
 
-player takes turns marking spaces on the 6x6 grid. Identification of the winner is 
-
-based on the highest number of 4-stone in a row(either horizontally, or vertically, or 
-
-diagonally) when the entire grid is occupied. 
-
-Platform Software on which the Tic Tac Toe is expected to be designed. 
-
-Single player Player plays against AI 
-
-Multi Player Player plays against another player 
-
-Graphical User 
-
-Interface 
-
-Skill Level Easy, Intermediate, Hard. They are the difficulty levels in single player  game. 
-
-C++ C++ is an object oriented programming (OOP) language and is an extension of C 
-
-It is a type of interface that allows users to interact with electronic devices by the 
-
-use of windows icons and menus that can be implemented at the user’s command. 
-
-language. It is one of the most popular programming language for graphical 
-
-applications. 
-
-Acronym Meaning 
-
-GUI Graphical User Interface 
-
-AI Artificial Intelligence 
-
-TTT Tic Tac Toe 
-
-SQA Software Quality Assurance 
-
-UML Unified Modeling Language 
-
-SPMP Software Project management Plan 
-
-UC Use Cases
-
-SD Sequence Diagram
-
-INTERVIEW WITH CLIENT
+INTERVIEW WITH CLIENT
 
 Location: University Of Houston- Downtown
-
 Date: 28th January 2016
-
 Time: 1PM
-
 Attendees: Rowan Taylor, Imran Hussain, Zhu Ming
-
 Client: Professor Yuan Shengli
 
 Description:
-
 Question 1: Can you briefly describe the kind of game application you want us to create?
-
-Response: I want you to create a tic tac toe game on a 6X6 grid. This should be a two players game one 
-
-may be a computer. They take turns to place a stone of their colors. The winner is the player who has 
-
-higher number of 4-stones-in-a-row (either horizontally, or vertically, or diagonally) when the entire grid 
-
-is occupied.
+Response: I want you to create a tic tac toe game on a 6X6 grid. This should be a two players game one may be a computer. They take turns to place a stone of their colors. The winner is the player who has higher number of 4-stones-in-a-row (either horizontally, or vertically, or diagonally) when the entire grid is occupied.
 
 Question 2: Do you require to have difficulty level while playing with AI?
-
-Response: Yes, there should be three level of difficulty, easy , intermediate and hard. Player can challenge 
-
-his skills by playing in all these difficulties and try to beat the AI.
+Response: Yes, there should be three level of difficulty, easy , intermediate and hard. Player can challenge his skills by playing in all these difficulties and try to beat the AI.
 
 Question 3: Any requirement for the platform of the TTT game?
-
-Response: There is no requirement for the platform, you can create game on any platform which is 
-
-convenient.
-
+Response: There is no requirement for the platform, you can create game on any platform which is convenient.
 Question 4: What other features are needed besides a 6X6 grid and difficulties level?
-
-Response: Player can have a option of registering his username or playing as a guest and also computer 
-
-can keep track of the history of each player. Upon user’s request, computer can display the history of the 
-
-players.
-
+Response: Player can have a option of registering his username or playing as a guest and also computer can keep track of the history of each player. Upon user’s request, computer can display the history of the players.
 Question 4:What is the deadline for the TTT game?
-
 Response: Yes, the TTT should be delivered by the end of the April 2016.
-
-FUNCTIONAL REQUIREMENTS
-
+FUNCTIONAL REQUIREMENTS
 USE CASES
-
 USE CASE 1
+Goals of actor
+Play the Tic tac toe during the free time to ease all the stress and freshen the mind.
+Tasks
+User will start the game by clicking on the TTT exe file. User will see a 6X6 Grid allow him to choose the options of single player, multiplayer and AI. After choosing that Mode, User now will have to choose the mode of difficulty which are Easy, Medium, and Hard. User starts the Game.
+Preconditions
+Players needs to enter the name to start the game.
+Exceptions
+If there is an ongoing game running, error message popped up.
+Variation of action interactions
 
-Goals of actor Play the Tic tac toe during the free time to ease all the stress and 
 
-freshen the mind. 
+System change/production
 
-Tasks User will start the game by clicking on the TTT exe file. User will see a 
-
-6X6 Grid allow him to choose the options of single player, 
-
-multiplayer and AI. After choosing that Mode, User now will have to 
-
-choose the mode of difficulty which are Easy, Medium, and Hard. 
-
-User starts the Game. 
-
-Preconditions Players needs to enter the name to start the game. 
-
-Exceptions If there is an ongoing game running, error message popped up. 
-
-Variation of action interactions 
-
-System change/production 
 
 USE CASE 2
-
-Goals of actor Create new player 
-
-Tasks User needs to open the TTT. He will ask to create a username by 
-
-entering the name in the textbox and then he needs to click on the 
-
-create a player button. 
-
-Preconditions No player is created 
-
-Exceptions Error message is displayed if the player is already registered with the 
-
-Variation of action interactions NA 
-
-System change/production NA 
-
-same name. 
+Goals of actor
+Create new player
+Tasks
+User needs to open the TTT. He will ask to create a username by entering the name in the textbox and then he needs to click on the create a player button.
+Preconditions
+No player is created
+Exceptions
+Error message is displayed if the player is already registered with the same name.
+Variation of action interactions
+NA
+System change/production
+NA
 
 USE CASE 3
-
-Goals of actor Game mode selection 
-
-Tasks In order for the user to select the game mode, user needs to open 
-
-the TTT and then register and then select the game mode either he 
-
-wants to play with the AI or with the other player . 
-
-Preconditions none 
-
-Exceptions There will be no exception for the given cases 
-
-Variation of action interactions User can always go back if he mistakenly select the wrong game 
-
-System change/production None 
-
-mode. 
+Goals of actor
+Game mode selection
+Tasks
+In order for the user to select the game mode, user needs to open the TTT and then register and then select the game mode either he wants to play with the AI or with the other player .
+Preconditions
+none
+Exceptions
+There will be no exception for the given cases
+Variation of action interactions
+User can always go back if he mistakenly select the wrong game mode.
+System change/production
+None
 
 USE CASE 4
+Goals of actor
+Single Player Mode
+Tasks
+In order for a user to play in a single player mode, user needs to open the TTT and then register the username if not registered before. User need to select the Player Vs AI as a game mode. In this mode he will select the difficulty mode as easy, intermediate or hard.
+Preconditions
+Only to be used in the software when playing against the AI.	
+Exceptions
+Can only be applicable against AI.
+Variation of action interactions
+NA
+System change/production
+NA
 
-Goals of actor Single Player Mode 
 
-Tasks In order for a user to play in a single player mode, user needs to open 
 
-the TTT and then register the username if not registered before. User 
-
-need to select the Player Vs AI as a game mode. In this mode he will 
-
-select the difficulty mode as easy, intermediate or hard. 
-
-Preconditions Only to be used in the software when playing against the AI. 
-
-Exceptions Can only be applicable against AI.
-
-Variation of action interactions NA 
-
-System change/production NA 
 
 USE CASE 5
+Goals of actor
+Difficulty Level
+Tasks
+In order for the user to select the difficulty level, User needs to open the TTT. Then he will need to create a player. Then select the game mode as Player vs AI.
+Preconditions
+User need to select Player Vs AI in order to select the difficulty level.	
+Exceptions
+It is only applicable when selecting game mode as Player Vs AI.
+Variation of action interactions
+NA
+System change/production
+The user will be able to change the difficulty of the game every time he/she chooses to play against the AI
 
-Goals of actor Difficulty Level 
+USE CASE 6
+Goals of actor
+Exit the game
+Tasks
+In order for the user to exit the game. He needs to open the TTT. Then he can exit the game, if he changes his mind not to play. He can also exit while playing the game.
+Preconditions
+Needs to open the TTT.
+Exceptions
+None
+Variation of action interactions
+NA
+System change/production
+NA
 
-Tasks In order for the user to select the difficulty level, User needs to open 
-
-the TTT. Then he will need to create a player. Then select the game 
-
-mode as Player vs AI. 
-
-Preconditions User need to select Player Vs AI in order to select the difficulty level. 
-
-Exceptions It is only applicable when selecting game mode as Player Vs AI. 
-
-Variation of action interactions NA 
-
-System change/production The user will be able to change the difficulty of the game every time 
-
-he/she chooses to play against the AI 
-
-NON-FUNCTIONAL REQUIREMENTS
-
+NON-FUNCTIONAL REQUIREMENTS
 COST CONSTRAINTS: 
-
-There is no cost constraint for this TTT game as we try to convince our client with our 
-
-skills and abilities so we can create great and long-term relationship with the client. So in 
-
-future we will get more projects. And, also ttt is well maintained so no further 
-
-maintenance will be needed.
+There is no cost constraint for this TTT game as we try to convince our client with our skills and abilities so we can create great and long-term relationship with the client. So in future we will get more projects. And, also TTT is well maintained so no further maintenance will be needed.
 
 RELIABILITY: 
-
 The TTT game is very reliable, efficient and error free. Our testing team tested and work 
-
 very hard to ensure the 100% reliability to the client.
 
 TIME CONSTRAINTS: 
-
 The game will be available to the client on Thursday, April 28th 2016.
+
+
