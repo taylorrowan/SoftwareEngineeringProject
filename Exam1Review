@@ -1,0 +1,92 @@
+Exam 1 Review
+
+Formulas:
+
+FFP metric: S - Fi + Fl + Pr, C = d x S
+
+Intermediate COCOMO: Nominal effort = 3.2 x (KDSI)^1.05
+
+
+1. Please list the names of all phases of the classical software life-cycle model. (5 points)
+  (5 point answer)
+  1. Requirements phase
+  2. Specification Phase
+  3. Design Phase
+  4. Implementation Phase
+  5. Postdelivery Phase
+  6. Retirement
+
+List the manes of all phases (or increments) of the Unified Process (5point)
+  (5 point answer)
+  1. Inception
+  2. Elaboration
+  3. Construction
+  4. Transition
+  
+List the names of all work flows of the Unified Process (5points)
+  (5 point answer)
+  1. Requirements Workflow
+  2. Analysis Workflow
+  3. Design Workflow
+  4. Implementation Workflow
+  5. Testing Workflow
+
+2. Suppose you need to build a software program to perform number sorting. What life-cycle model would you use and why? ( 5 points)
+  Since number sorting is fairly simple and short, it might cost more than necessary to use Unified Process because of the heavy
+  documentation.  May be financially smarter and easier to use code-and-fix or open source.
+  
+3. Can the requirement document and product specification document be combined into one document? Why? (10 points)
+    (6 point answer) 
+    No, The product specification document must not have incompleteness or unsure data, and is used for the documentation of the
+    actual coding of the product.  The requirement document is meant to manage the business side of the project.
+    
+4. What are the strengths and weaknesses of the democratic team organization? (10 points)
+    (7 point answer)
+    The democratic team organization can be highly productive, but lacks in organization and teams must spring up spontaneously, as
+    well as practice ego-less programming.
+    
+5. What is upperCASE tool and what is lowerCASE tool? (10 points)
+  ( answer given was scored with 0 points)
+  
+  
+6. Two programmers A and B are trying to modify a program file Base.cpp at the same time, each on a section. List the names of 
+three version-control tolls that may be used to resolve the conflict. ( 3 points)
+
+
+Show how to use a version-control tool to resolve the conflict. (7 points)
+
+
+7.  List the members of a walkthrough team. (5 points)
+        (5 point answer)
+        Representatives from the current workflow, representatives from the next workflow, representatives from the SQA group.
+    
+    List the names of all the formal steps of an inspection. (5 points)
+        (5 point answer)
+        1. Overview
+        2. Preparation
+        3. Inspection
+        4. Rework
+        5. Follow up
+
+
+8. Is functional cohesion the optimal type of cohesion? why? (10 points)
+      (10 point answer)
+      No, functional cohesion performs one action, but informational cohesion is better in that it works with muliple entry points
+      on a single date structure. Informational cohesion is the optimal type of cohesion.
+      
+9. An organization currently has over 50,000 modules. what criteria will you use to determine whether to reuse a module in future
+products? (10 points)
+    (8 point answer)
+    If a module has high cohesion and low coulpling, it would be easier to reuse that module in the future.
+    
+10. an average-complex software product is estimated to have 12 KDSI. The capability of the software team is also at industry
+average. What is the estimeated amount of efforts required for the project? Do the efforts consist of mostly coding and
+debugging? (10 points)
+    (7 point answer)
+    Nominal Effort = 3.2(KDSI)^1.05
+    Nominal Effort = 3.2(12)^1.05
+    
+    The efforts are spent mostly in preparation of the coding, through the documentation and palnning of the porject. The 
+    efficency of the coding and debugging is dependent on good planning.
+    
+    
